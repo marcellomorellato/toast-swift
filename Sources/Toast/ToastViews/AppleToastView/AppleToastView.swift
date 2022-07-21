@@ -17,6 +17,8 @@ public class AppleToastView : UIView, ToastView {
     
     private let child: UIView
     
+    public var customBackgroundColor: UIColor?
+    
     private var toast: Toast?
     
     public init(
@@ -66,10 +68,15 @@ public class AppleToastView : UIView, ToastView {
         layoutIfNeeded()
         clipsToBounds = true
         layer.cornerRadius = frame.height / 2
-        if #available(iOS 12.0, *) {
-            backgroundColor = traitCollection.userInterfaceStyle == .light ? lightBackgroundColor : darkBackgroundColor
-        } else {
-            backgroundColor = lightBackgroundColor
+        
+        if ((customBackgroundColor) != nil) {
+            backgroundColor = customBackgroundColor
+        }else {
+            if #available(iOS 12.0, *) {
+                backgroundColor = traitCollection.userInterfaceStyle == .light ? lightBackgroundColor : darkBackgroundColor
+            } else {
+                backgroundColor = lightBackgroundColor
+            }
         }
         
         addShadow()
