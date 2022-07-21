@@ -28,7 +28,7 @@ Pod::Spec.new do |spec|
   A Swift Toast view - iOS 14 style and newer - built with UIKit. 🍞
                    DESC
 
-  spec.homepage     = "https://github.com/BastiaanJansen/Toast-Swift"
+  spec.homepage     = "https://github.com/marcellomorellato/toast-swift"
   spec.screenshots  = "https://github.com/BastiaanJansen/Toast-Swift/raw/main/Screenshots/Text.png", "https://github.com/BastiaanJansen/Toast-Swift/raw/main/Screenshots/Airpods-Pro.png", "https://github.com/BastiaanJansen/Toast-Swift/raw/main/Screenshots/Text-Dark.png", "https://github.com/BastiaanJansen/Toast-Swift/raw/main/Screenshots/Airpods-Pro-Dark.png"
 
 
@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/BastiaanJansen/Toast-Swift.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/marcellomorellato/toast-swift.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
